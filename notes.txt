@@ -1,0 +1,62 @@
+bootstrap color code -> #563d7c 
+
+
+{% comment %} TO CREATE 100 LEVEL BOOKS DATABASE TABLE {% endcomment %}
+CREATE TABLE levelonebooks(
+	id int not null PRIMARY KEY AUTO_INCREMENT,
+    bookName VARCHAR(255) not null,
+    level VARCHAR(100) not null,
+    courseCode VARCHAR(200) not null,
+    description text not null,
+    author VARCHAR(255) not null,
+    fileLocation VARCHAR(500) not null,
+    downloads int not null,
+    likes int not null,
+    uploadDate VARCHAR(255) not null
+);
+
+
+{% comment %} TO CREATE PAST QUESTIONS TABLE IN THE DATABASE {% endcomment %}
+CREATE TABLE pqlevelone(
+	id int not null PRIMARY KEY AUTO_INCREMENT,
+    pqName VARCHAR(255) not null,
+    level VARCHAR(100) not null,
+    courseCode VARCHAR(200) not null,
+    description text not null,
+    fileLocation VARCHAR(500) not null,
+    downloads int not null,
+    likes int not null,
+    uploadDate VARCHAR(255) not null
+);
+
+
+
+
+set
+{% comment %} TO CREATE ADMINS TABLE IN DATABASE {% endcomment %}
+CREATE TABLE admins(
+	id int not null PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) not null,
+    username VARCHAR(100) not null,
+    password VARCHAR(100) not null,
+    email VARCHAR(255) not null,
+    date_joined VARCHAR(200) not null
+);
+
+
+
+//CREATING 100 LEVEL VIDEOS
+
+CREATE TABLE levelonevideos(
+    id int not null PRIMARY KEY AUTO_INCREMENT,
+    videoName VARCHAR(255) not null,
+    level VARCHAR(100) not null,
+    courseCode VARCHAR(200) not null,
+    description text not null,
+    author VARCHAR(255) not null,
+    fileLocation VARCHAR(500) not null,
+    previewLocation VARCHAR(500) not null,
+    downloads int not null,
+    likes int not null,
+    uploadDate VARCHAR(255) not null
+);
